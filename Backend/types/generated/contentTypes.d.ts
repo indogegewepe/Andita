@@ -702,10 +702,6 @@ export interface ApiWhatsAppWhatsApp extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     PhoneNumber: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    text_whats_apps: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::text-whats-app.text-whats-app'
-    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

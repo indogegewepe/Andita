@@ -13,11 +13,6 @@
   "attributes": {
     "PhoneNumber": {
       "type": "string"
-    },
-    "text_whats_apps": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::text-whats-app.text-whats-app"
     }
   }
 }
